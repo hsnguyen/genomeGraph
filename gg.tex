@@ -129,11 +129,20 @@ Resources to considered:
 \item Debate: \url{https://github.com/lh3/gfatools/issues/1}
 \end{itemize}
 \section*{Technical focus}
-One way to construct the genome graph is to integrate a variant catalog (VCF file) into a reference. This is a common practice for human genome when we have a stable reference and a set of known variants ouput in a VCF file.
+\subsection*{Aims}
+\begin{itemize}
+\item[1.] Construct genome graph for AMR strains, e.g. \kp{}
+\item[2.] Identify structural variants of the pangenome by studying the graph topology (sequence segments and their order)  
+\item[3.] \ldots
+\end{itemize}
+\subsection*{Approaches}
+One way to construct the genome graph is to integrate a variant catalog (VCF file) into a reference. This is a common practice for human genome when we have a stable reference and a set of known variants ouput in a VCF file \ldots
 
 Another option is to build the graph on the assembly sequences from the beginning.
 One problem addressed by researcher when constructing a genome graph progressively is the unavoidable \emph{reference bias}.
 \sw{} try to avoid this by aligning all pairs of sequences together, sacrifying the ability to integrate genomes into the graph one-by-one from the very beginning.
+
+
 \section*{Results}
 
 \bibliographystyle{pnas2011}
